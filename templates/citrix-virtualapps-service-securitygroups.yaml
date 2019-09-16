@@ -13,7 +13,7 @@ Resources:
   CCSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
-      GroupName: !Sub 'SG-CitrixCloudConnectors-${QSDeploymentID}'
+      GroupName: !Sub 'SecGrp-CitrixCloudConnectors-${QSDeploymentID}'
       GroupDescription: Security group which allows access to the Cloud Connectors
       VpcId: !Ref VPCID
       SecurityGroupIngress:
